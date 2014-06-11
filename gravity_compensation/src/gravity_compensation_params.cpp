@@ -48,30 +48,30 @@ GravityCompensationParams::~GravityCompensationParams()
 
 void GravityCompensationParams::setBias(const Eigen::Matrix<double, 6, 1> &bias)
 {
-	m_bias = bias;
+  m_bias = bias;
 }
 
 Eigen::Matrix<double, 6, 1> GravityCompensationParams::getBias()
 {
-    return m_bias;
+  return m_bias;
 }
 
 void GravityCompensationParams::setGripperMass(const double &gripper_mass)
 {
-	m_gripper_mass = gripper_mass;
+  m_gripper_mass = gripper_mass;
 }
 
 double GravityCompensationParams::getGripperMass()
 {
-    return m_gripper_mass;
+  return m_gripper_mass;
 }
 
 void GravityCompensationParams::setGripperCOM(const tf::StampedTransform &gripper_com)
 {
-    m_gripper_com = gripper_com;
+  m_gripper_com = gripper_com;
 }
 
 tf::StampedTransform GravityCompensationParams::getGripperCOM()
 {
-    return m_gripper_com;
+  return m_gripper_com;
 }
